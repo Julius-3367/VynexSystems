@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Vynex Systems - Your trusted software solutions partner."
+    />
+    <meta
+      name="keywords"
+      content="Software, IT Solutions, Web Development, AI Chat, Domain Registration"
+    />
+    <meta name="author" content="VynexSystems" />
+    <title>Vynex Systems - Software Solutions</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        background-color: #444;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li {
+        position: relative;
+        margin: 0 15px;
+      }
+
+      nav ul li a {
+        color: white;
+        padding: 15px;
+        text-decoration: none;
+        display: block;
+      }
+
+      nav ul li a:hover {
+        background-color: #555;
+      }
+
+      /* Dropdown Menu */
+      nav ul li .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        min-width: 200px;
+        z-index: 1;
+      }
+
+      nav ul li .dropdown-content a {
+        padding: 12px;
+        text-decoration: none;
+        color: #fff;
+        display: block;
+      }
+
+      nav ul li .dropdown-content a:hover {
+        background-color: #555;
+      }
+
+      /* Show the dropdown content when hovering over the parent */
+      nav ul li:hover .dropdown-content {
+        display: block;
+      }
+
+      .container {
+        padding: 20px;
+      }
+
+      .pricing-table {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .pricing-card {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        width: 30%;
+        text-align: center;
+      }
+
+      .pricing-card h4 {
+        margin: 0 0 10px;
+      }
+
+      .pricing-card p {
+        margin: 0;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+      }
+
+      /* WhatsApp Button */
+      .whatsapp_float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25d366;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        z-index: 1000;
+      }
+
+      .whatsapp_icon {
+        width: 60px;
+        height: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <h1>VynexSystems</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#home" onclick="showSection('home')">Home</a></li>
+        <li><a href="#about" onclick="showSection('about')">About Us</a></li>
+        <li>
+          <a href="#services" onclick="showSection('services')">Services</a>
+          <div class="dropdown-content">
+            <a href="#">Custom Software Development</a>
+            <a href="#">Mobile Application Development</a>
+            <a href="#">Web Development</a>
+            <a href="#">Web Hosting Services</a>
+            <a href="#">Software Consulting</a>
+            <a href="#">UI/UX Design</a>
+            <a href="#">DevOps Solutions</a>
+            <a href="#">Digital Marketing</a>
+            <a href="#">Data Analysis</a>
+            <a href="#">HR System</a>
+            <a href="#">ERP System</a>
+          </div>
+        </li>
+        <li>
+          <a href="#domain" onclick="showSection('domain')"
+            >Domain Registration</a
+          >
+          <div class="dropdown-content">
+            <a href="#">Bronze Package - KSh 3500 / Month</a>
+            <a href="#">Silver Package - KSh 10000 / Month</a>
+            <a href="#">Gold Package - KSh 25000 / Month</a>
+          </div>
+        </li>
+        <li>
+          <a href="#contact" onclick="showSection('contact')">Contact Us</a>
+          <div class="dropdown-content">
+            <a href="mailto:vynexsystems@gmail.com"
+              >Email: vynexsystems@gmail.com</a
+            >
+            <a href="tel:+254741585248">Phone: +254 741 585248</a>
+            <a href="#">Address: Nairobi, Kenya</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+      <h2>Your Trusted Software Solutions Partner</h2>
+      <p>Providing cutting-edge software for businesses around the world.</p>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about" class="container" style="display: none">
+      <h3>About Us</h3>
+      <p>
+        At Vynex Systems, we specialize in providing top-tier software solutions
+        for businesses and individuals. Our goal is to empower our clients with
+        the best technology tools to help them grow and achieve success.
+      </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="container" style="display: none">
+      <h3>Our Services</h3>
+      <p>
+        Explore the wide range of services we offer, from web development to AI
+        solutions.
+      </p>
+    </section>
+
+    <!-- Domain Registration Section -->
+    <section id="domain" class="container" style="display: none">
+      <h3>Domain Registration & Web Hosting Packages</h3>
+      <div class="pricing-table">
+        <div class="pricing-card">
+          <h4>Bronze Package</h4>
+          <p>Basic hosting with essential features.</p>
+          <p>KSh 3500 / Month</p>
+        </div>
+        <div class="pricing-card">
+          <h4>Silver Package</h4>
+          <p>Enhanced hosting with additional features.</p>
+          <p>KSh 10000 / Month</p>
+        </div>
+        <div class="pricing-card">
+          <h4>Gold Package</h4>
+          <p>Premium hosting with all advanced features.</p>
+          <p>KSh 25000 / Month</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container" style="display: none">
+      <h3>Contact Us</h3>
+      <p>
+        Feel free to reach out to us through WhatsApp or chat with our AI
+        assistant for inquiries.
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 VynexSystems. All Rights Reserved.</p>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a
+      href="https://wa.me/254741585248"
+      class="whatsapp_float"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+        alt="WhatsApp"
+        class="whatsapp_icon"
+      />
+    </a>
+
+    <!-- JavaScript for Section Display -->
+    <script>
+      function showSection(sectionId) {
+        document.querySelectorAll(".container").forEach((section) => {
+          section.style.display = "none";
+        });
+        document.getElementById(sectionId).style.display = "block";
+      }
+    </script>
+  </body>
+</html>
